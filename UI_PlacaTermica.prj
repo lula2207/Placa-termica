@@ -1,6 +1,6 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="1217150405" file="C:\Users\joao.lula\Documents\TCC\Placa-termica\Placa  Termica.prj" location="C:\Users\joao.lula\Documents\TCC\Placa-termica" name="Placa  Termica" target="target.mlapps" target-name="Package App">
-    <param.appname>Placa  Termica</param.appname>
+  <configuration build-checksum="2868943185" file="C:\Users\joao.lula\Documents\TCC\Placa-termica\UI_PlacaTermica.prj" location="C:\Users\joao.lula\Documents\TCC\Placa-termica" name="UI_PlacaTermica" target="target.mlapps" target-name="Package App">
+    <param.appname>UI_PlacaTermica</param.appname>
     <param.authnamewatermark />
     <param.email />
     <param.company>UFCG - DEE</param.company>
@@ -8,13 +8,13 @@
     <param.icons />
     <param.summary />
     <param.description />
-    <param.screenshot>C:\Users\joao.lula\AppData\Local\Temp\tp31ab5f63_e5e4_4374_afb8_f08d4a74dbc8.png</param.screenshot>
+    <param.screenshot>C:\Users\joao.lula\AppData\Local\Temp\tpf59d6983_c07c_43fa_8fc1_5854ca1d3bbb.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
     <param.platforms />
-    <param.output>C:\Users\joao.lula\Documents</param.output>
+    <param.output>${PROJECT_ROOT}</param.output>
     <param.guid>dde41147-a457-4758-8f81-da0e8a10a857</param.guid>
     <unset>
       <param.authnamewatermark />
@@ -28,20 +28,22 @@
       <param.products.id />
       <param.products.version />
       <param.platforms />
+      <param.output />
     </unset>
     <fileset.main>
       <file>${PROJECT_ROOT}\UI_PlacaTermica.mlapp</file>
     </fileset.main>
     <fileset.depfun>
-      <file>${PROJECT_ROOT}\PlacaTermicaMatlab.m</file>
+      <file>C:\Users\joao.lula\Documents\TCC\TCC\PlacaTermicaPID\PlacaTermicaMatlab.m</file>
     </fileset.depfun>
     <fileset.resources>
       <file>${PROJECT_ROOT}\Controlador.m</file>
       <file>${PROJECT_ROOT}\ControladorPID.m</file>
+      <file>${PROJECT_ROOT}\PlacaTermicaMatlab.m</file>
     </fileset.resources>
     <fileset.package />
     <build-deliverables>
-      <file location="C:\Users\joao.lula" name="Documents" optional="false">C:\Users\joao.lula\Documents</file>
+      <file location="C:\Users\joao.lula\Documents\TCC" name="Placa-termica" optional="false">C:\Users\joao.lula\Documents\TCC\Placa-termica</file>
     </build-deliverables>
     <workflow />
     <matlab>
@@ -52,8 +54,8 @@
         <toolbox name="gpucoder" />
         <toolbox name="fixedpoint" />
         <toolbox name="matlabhdlcoder" />
-        <toolbox name="neuralnetwork" />
         <toolbox name="polyspacebugfinder" />
+        <toolbox name="neuralnetwork" />
       </toolboxes>
       <toolbox>
         <matlabcoder>
@@ -81,14 +83,14 @@
         </matlabhdlcoder>
       </toolbox>
       <toolbox>
-        <neuralnetwork>
-          <enabled>true</enabled>
-        </neuralnetwork>
-      </toolbox>
-      <toolbox>
         <polyspacebugfinder>
           <enabled>true</enabled>
         </polyspacebugfinder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
       </toolbox>
     </matlab>
     <platform>

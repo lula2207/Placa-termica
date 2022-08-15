@@ -1,6 +1,6 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="3012466585" file="C:\Users\joao.lula\Documents\TCC\Placa-termica\UI_PlacaTermica_Doi.prj" location="C:\Users\joao.lula\Documents\TCC\Placa-termica" name="UI_PlacaTermica_Doi" target="target.mlapps" target-name="Package App">
-    <param.appname>UI_PlacaTermica_Doi</param.appname>
+  <configuration build-checksum="1181721871" file="C:\Users\joao.lula\Documents\TCC\Placa-termica\UI_PlacaTermica_2017b.prj" location="C:\Users\joao.lula\Documents\TCC\Placa-termica" name="UI_PlacaTermica_2017b" target="target.mlapps" target-name="Package App">
+    <param.appname>UI_PlacaTermica_2017b</param.appname>
     <param.authnamewatermark />
     <param.email />
     <param.company />
@@ -8,7 +8,7 @@
     <param.icons />
     <param.summary />
     <param.description />
-    <param.screenshot>C:\Users\joao.lula\AppData\Local\Temp\tp08a1a461_0755_42a2_aee2_c38de4571ec6.png</param.screenshot>
+    <param.screenshot>C:\Users\joao.lula\AppData\Local\Temp\tpef715e07_041e_4f75_9837_24a667f2d8d3.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
@@ -34,12 +34,11 @@
     <fileset.main>
       <file>${PROJECT_ROOT}\UI_PlacaTermica2017b.mlapp</file>
     </fileset.main>
-    <fileset.depfun>
-      <file>${PROJECT_ROOT}\PlacaTermicaMatlab.m</file>
-    </fileset.depfun>
+    <fileset.depfun />
     <fileset.resources>
       <file>${PROJECT_ROOT}\Controlador.m</file>
       <file>${PROJECT_ROOT}\ControladorPID.m</file>
+      <file>${PROJECT_ROOT}\PlacaTermicaMatlab.m</file>
     </fileset.resources>
     <fileset.package />
     <build-deliverables>
@@ -54,8 +53,8 @@
         <toolbox name="gpucoder" />
         <toolbox name="fixedpoint" />
         <toolbox name="matlabhdlcoder" />
-        <toolbox name="neuralnetwork" />
         <toolbox name="polyspacebugfinder" />
+        <toolbox name="neuralnetwork" />
       </toolboxes>
       <toolbox>
         <matlabcoder>
@@ -83,14 +82,14 @@
         </matlabhdlcoder>
       </toolbox>
       <toolbox>
-        <neuralnetwork>
-          <enabled>true</enabled>
-        </neuralnetwork>
-      </toolbox>
-      <toolbox>
         <polyspacebugfinder>
           <enabled>true</enabled>
         </polyspacebugfinder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
       </toolbox>
     </matlab>
     <platform>
